@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XCAPE - Escape Room | Misterio, Aventura y Adrenalina</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-x">X</span>CAPE
+                </a>
+            </div>
+            
+            <!-- Menú Hamburguesa -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Menú Desktop -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">INICIO</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">SALAS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/casa-embrujada.html">Casa Embrujada</a></li>
+                        <li><a href="pages/maldicion-tutankamon.html">Maldición de Tutankamón</a></li>
+                        <li><a href="pages/carcel.html">La Cárcel</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/precios.html" class="nav-link">PRECIOS</a></li>
+                <li><a href="pages/empresas.html" class="nav-link">EMPRESAS</a></li>
+                <li><a href="pages/galeria.html" class="nav-link">GALERÍA</a></li>
+                <li><a href="pages/contacto.html" class="nav-link">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="stars"></div>
+            <div class="fog"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="x-letter">X</span>CAPE
+            </h1>
+            <p class="hero-subtitle">Despierta tu lado más oscuro</p>
+            
+            <div class="hero-buttons">
+                <a href="#salas" class="btn btn-primary">
+                    <i class="fas fa-door-open"></i> Explora Nuestras Salas
+                </a>
+                <a href="pages/contacto.html" class="btn btn-secondary">
+                    <i class="fas fa-calendar-alt"></i> Reserva Ahora
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Desplázate para explorar</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- SALAS DESTACADAS -->
+    <section class="salas-container" id="salas">
+        <div class="section-title">
+            <h2>Nuestras Salas</h2>
+            <p>Elige tu aventura</p>
+        </div>
+
+        <div class="salas-grid">
+            <!-- Sala 1: Casa Embrujada -->
+            <div class="sala-card casa-embrujada-card">
+                <div class="sala-image">
+                    <div class="sala-overlay"></div>
+                    <i class="fas fa-ghost"></i>
+                </div>
+                <div class="sala-content">
+                    <h3>Casa Embrujada</h3>
+                    <p class="sala-difficulty">
+                        <span class="difficulty">Dificultad: <strong>Medio</strong></span>
+                    </p>
+                    <p class="sala-description">
+                        Adéntrate en una mansión maldita donde los espíritus no descansan. Descubre los secretos oscuros que guardan sus paredes.
+                    </p>
+                    <div class="sala-stats">
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>60 min</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <span>2-6 personas</span>
+                        </div>
+                    </div>
+                    <a href="pages/casa-embrujada.html" class="btn btn-sala">
+                        Descubre Más
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sala 2: Maldición de Tutankamón -->
+            <div class="sala-card tutankamon-card">
+                <div class="sala-image">
+                    <div class="sala-overlay"></div>
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="sala-content">
+                    <h3>Maldición de Tutankamón</h3>
+                    <p class="sala-difficulty">
+                        <span class="difficulty">Dificultad: <strong>Difícil</strong></span>
+                    </p>
+                    <p class="sala-description">
+                        Una tumba milenaria, una maldición antigua y solo 60 minutos para escapar. ¿Podrás romper la maldición del faraón?
+                    </p>
+                    <div class="sala-stats">
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>60 min</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <span>2-6 personas</span>
+                        </div>
+                    </div>
+                    <a href="pages/maldicion-tutankamon.html" class="btn btn-sala">
+                        Descubre Más
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sala 3: La Cárcel -->
+            <div class="sala-card carcel-card">
+                <div class="sala-image">
+                    <div class="sala-overlay"></div>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="sala-content">
+                    <h3>La Cárcel</h3>
+                    <p class="sala-difficulty">
+                        <span class="difficulty">Dificultad: <strong>Muy Difícil</strong></span>
+                    </p>
+                    <p class="sala-description">
+                        Escaparás de una celda de máxima seguridad o pasarás el resto de tu vida entre rejas. El tiempo juega en tu contra.
+                    </p>
+                    <div class="sala-stats">
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>60 min</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <span>2-6 personas</span>
+                        </div>
+                    </div>
+                    <a href="pages/carcel.html" class="btn btn-sala">
+                        Descubre Más
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARACTERÍSTICAS -->
+    <section class="features">
+        <div class="section-title">
+            <h2>¿Por qué elegir XCAPE?</h2>
+            <p>La experiencia definitiva en escape rooms</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-brain"></i>
+                <h3>Desafíos Inteligentes</h3>
+                <p>Puzles y enigmas diseñados por expertos que pondrán a prueba tu ingenio.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-heart"></i>
+                <h3>Experiencia Inmersiva</h3>
+                <p>Ambientes temáticos con efectos de sonido, iluminación y decoración realista.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Trabajo en Equipo</h3>
+                <p>Perfecto para amigos, familia y equipos corporativos que buscan unirse.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-medal"></i>
+                <h3>Certificado de Escape</h3>
+                <p>Obtén tu certificado si logras escapar. ¡Demuestra que eres un verdadero maestro!</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>60 Minutos de Adrenalina</h3>
+                <p>Tiempo justo para vivir una experiencia emocionante y memorable.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-star"></i>
+                <h3>Puntuaciones Personales</h3>
+                <p>Compite con tus amigos y sube en el ranking de mejores escapistas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h3 class="stat-number" data-count="5000">0</h3>
+                <p>Adventureros Escapados</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="stat-number" data-count="95">0</h3>
+                <p>% de Éxito</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="stat-number" data-count="3">0</h3>
+                <p>Salas Temáticas</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="stat-number" data-count="4">0</h3>
+                <p>Años de Experiencia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>¿Listo para el Desafío?</h2>
+            <p>Reúne a tu equipo y demuestra que puedes escapar</p>
+            <a href="pages/contacto.html" class="btn btn-primary btn-large">
+                <i class="fas fa-check-circle"></i> Reserva tu Experiencia
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>XCAPE</h4>
+                <p>Vive la experiencia del escape room más emocionante de la ciudad.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>SALAS</h4>
+                <ul>
+                    <li><a href="pages/casa-embrujada.html">Casa Embrujada</a></li>
+                    <li><a href="pages/maldicion-tutankamon.html">Maldición de Tutankamón</a></li>
+                    <li><a href="pages/carcel.html">La Cárcel</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>INFORMACIÓN</h4>
+                <ul>
+                    <li><a href="pages/precios.html">Precios</a></li>
+                    <li><a href="pages/empresas.html">Empresas</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="pages/terminos.html">Términos de Servicio</a></li>
+                    <li><a href="pages/politicas-datos.html">Política de Datos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 XCAPE - Todos los derechos reservados | Desarrollado con <i class="fas fa-heart"></i> por SeBitaS17-web</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
