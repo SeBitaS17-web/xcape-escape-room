@@ -1,0 +1,795 @@
+/* ===============================================
+   ESTILOS ESPECÍFICOS - PÁGINAS DE SALAS
+   =============================================== */
+
+/* HERO DE SALA */
+.sala-hero {
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.sala-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(139, 92, 246, 0.2) 100%);
+    z-index: 1;
+}
+
+/* VARIANTES DE HÉROE POR SALA */
+.casa-embrujada-hero {
+    background-image: url('../images/salas/casa-embrujada-bg.jpg');
+}
+
+.tutankamon-hero {
+    background-image: url('../images/salas/tutankamon-bg.jpg');
+}
+
+.carcel-hero {
+    background-image: url('../images/salas/carcel-bg.jpg');
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 900px;
+    padding: 2rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.breadcrumb a {
+    color: var(--primary-red);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.breadcrumb a:hover {
+    color: var(--primary-white);
+}
+
+.breadcrumb span {
+    color: var(--text-light);
+}
+
+/* TÍTULOS DE SALA */
+.sala-title {
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary-white);
+    text-shadow: 0 0 30px rgba(255, 23, 68, 0.5);
+    margin: 0 0 1rem 0;
+    animation: titleGlow 2s ease-in-out infinite alternate;
+}
+
+.sala-subtitle {
+    font-size: 1.5rem;
+    color: var(--primary-red);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+}
+
+/* ESTADÍSTICAS DE SALA */
+.sala-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.sala-stats .stat {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.8rem 1.5rem;
+    background: rgba(255, 23, 68, 0.1);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 23, 68, 0.3);
+}
+
+.sala-stats i {
+    color: var(--primary-red);
+    font-size: 1.2rem;
+}
+
+/* ===============================================
+   DESCRIPCIÓN DE SALA
+   =============================================== */
+
+.sala-descripcion {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, rgba(10, 14, 39, 0.5) 0%, rgba(20, 24, 60, 0.3) 100%);
+}
+
+.descripcion-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.descripcion-text h2 {
+    font-size: 2.5rem;
+    color: var(--primary-white);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.descripcion-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-red), transparent);
+    border-radius: 2px;
+}
+
+.descripcion-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.descripcion-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 20px 60px rgba(255, 23, 68, 0.2);
+}
+
+.descripcion-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: var(--transition-slow);
+}
+
+.descripcion-image:hover img {
+    transform: scale(1.05);
+}
+
+/* ===============================================
+   CARACTERÍSTICAS DE SALA
+   =============================================== */
+
+.sala-features {
+    padding: 5rem 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.feature-card {
+    background: linear-gradient(135deg, rgba(20, 24, 60, 0.8) 0%, rgba(10, 14, 39, 0.95) 100%);
+    padding: 2.5rem;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 23, 68, 0.2);
+    text-align: center;
+    transition: var(--transition);
+    cursor: pointer;
+    animation: slideInUp 0.8s ease-out both;
+}
+
+.feature-card:nth-child(1) { animation-delay: 0.1s; }
+.feature-card:nth-child(2) { animation-delay: 0.2s; }
+.feature-card:nth-child(3) { animation-delay: 0.3s; }
+.feature-card:nth-child(4) { animation-delay: 0.4s; }
+.feature-card:nth-child(5) { animation-delay: 0.5s; }
+.feature-card:nth-child(6) { animation-delay: 0.6s; }
+
+.feature-card:hover {
+    transform: translateY(-15px);
+    border-color: var(--primary-red);
+    box-shadow: 0 25px 60px rgba(255, 23, 68, 0.3);
+}
+
+.feature-card i {
+    font-size: 3rem;
+    color: var(--primary-red);
+    margin-bottom: 1rem;
+    display: block;
+    transition: var(--transition);
+}
+
+.feature-card:hover i {
+    transform: scale(1.2);
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    color: var(--primary-white);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.feature-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ===============================================
+   SALAS FÍSICAS / ESPACIOS
+   =============================================== */
+
+.salas-fisicas {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(255, 23, 68, 0.05) 100%);
+}
+
+.espacios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.espacio-card {
+    background: linear-gradient(135deg, rgba(20, 24, 60, 0.6) 0%, rgba(10, 14, 39, 0.9) 100%);
+    padding: 2.5rem;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 23, 68, 0.15);
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+    animation: slideInUp 0.8s ease-out both;
+}
+
+.espacio-card:nth-child(1) { animation-delay: 0.1s; }
+.espacio-card:nth-child(2) { animation-delay: 0.2s; }
+.espacio-card:nth-child(3) { animation-delay: 0.3s; }
+.espacio-card:nth-child(4) { animation-delay: 0.4s; }
+.espacio-card:nth-child(5) { animation-delay: 0.5s; }
+.espacio-card:nth-child(6) { animation-delay: 0.6s; }
+
+.espacio-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-red);
+    box-shadow: 0 20px 50px rgba(255, 23, 68, 0.25);
+}
+
+.espacio-number {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: rgba(255, 23, 68, 0.2);
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    z-index: 1;
+}
+
+.espacio-card h3 {
+    font-size: 1.3rem;
+    color: var(--primary-white);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.espacio-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    position: relative;
+    z-index: 2;
+}
+
+/* ===============================================
+   REQUISITOS Y RESTRICCIONES
+   =============================================== */
+
+.requisitos {
+    padding: 5rem 0;
+}
+
+.requisitos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.requisito-card {
+    background: linear-gradient(135deg, rgba(20, 24, 60, 0.8) 0%, rgba(10, 14, 39, 0.95) 100%);
+    padding: 2.5rem;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 23, 68, 0.2);
+    transition: var(--transition);
+    animation: slideInUp 0.8s ease-out both;
+}
+
+.requisito-card:nth-child(1) { animation-delay: 0.1s; }
+.requisito-card:nth-child(2) { animation-delay: 0.2s; }
+.requisito-card:nth-child(3) { animation-delay: 0.3s; }
+
+.requisito-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-red);
+    box-shadow: 0 20px 50px rgba(255, 23, 68, 0.25);
+}
+
+.requisito-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-red) 0%, #e00000 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--primary-white);
+    margin: 0 auto 1.5rem;
+}
+
+.requisito-card h3 {
+    font-size: 1.2rem;
+    color: var(--primary-white);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.requisito-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.requisito-card li {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.requisito-card li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-red);
+    font-weight: bold;
+}
+
+/* ===============================================
+   GALERÍA DE SALA
+   =============================================== */
+
+.sala-galeria {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, rgba(10, 14, 39, 0.5) 0%, rgba(20, 24, 60, 0.3) 100%);
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.galeria-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    aspect-ratio: 1;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(255, 23, 68, 0.15);
+    animation: slideInUp 0.8s ease-out both;
+}
+
+.galeria-item:nth-child(1) { animation-delay: 0.1s; }
+.galeria-item:nth-child(2) { animation-delay: 0.2s; }
+.galeria-item:nth-child(3) { animation-delay: 0.3s; }
+.galeria-item:nth-child(4) { animation-delay: 0.4s; }
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.galeria-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 23, 68, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.galeria-item:hover {
+    box-shadow: 0 20px 60px rgba(255, 23, 68, 0.4);
+}
+
+.galeria-item:hover img {
+    transform: scale(1.1);
+}
+
+.galeria-item:hover .galeria-overlay {
+    background: rgba(255, 23, 68, 0.8);
+}
+
+.galeria-overlay i {
+    font-size: 2.5rem;
+    color: var(--primary-white);
+    opacity: 0;
+    transform: scale(0);
+    transition: var(--transition);
+}
+
+.galeria-item:hover .galeria-overlay i {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ===============================================
+   TESTIMONIOS
+   =============================================== */
+
+.testimonios {
+    padding: 5rem 0;
+}
+
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.testimonio-card {
+    background: linear-gradient(135deg, rgba(20, 24, 60, 0.8) 0%, rgba(10, 14, 39, 0.95) 100%);
+    padding: 2.5rem;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 23, 68, 0.2);
+    transition: var(--transition);
+    animation: slideInUp 0.8s ease-out both;
+}
+
+.testimonio-card:nth-child(1) { animation-delay: 0.1s; }
+.testimonio-card:nth-child(2) { animation-delay: 0.2s; }
+.testimonio-card:nth-child(3) { animation-delay: 0.3s; }
+
+.testimonio-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-red);
+    box-shadow: 0 20px 50px rgba(255, 23, 68, 0.25);
+}
+
+.stars {
+    display: flex;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.stars i {
+    color: var(--primary-red);
+    font-size: 1rem;
+}
+
+.testimonio-card p {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.testimonio-card h4 {
+    color: var(--primary-white);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0;
+}
+
+/* ===============================================
+   ESTADÍSTICAS
+   =============================================== */
+
+.stats-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(255, 23, 68, 0.05) 100%);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, rgba(20, 24, 60, 0.8) 0%, rgba(10, 14, 39, 0.95) 100%);
+    padding: 2.5rem;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 23, 68, 0.2);
+    text-align: center;
+    transition: var(--transition);
+    animation: slideInUp 0.8s ease-out both;
+}
+
+.stat-card:nth-child(1) { animation-delay: 0.1s; }
+.stat-card:nth-child(2) { animation-delay: 0.2s; }
+.stat-card:nth-child(3) { animation-delay: 0.3s; }
+.stat-card:nth-child(4) { animation-delay: 0.4s; }
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-red);
+    box-shadow: 0 20px 50px rgba(255, 23, 68, 0.25);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--primary-red);
+    text-shadow: 0 0 20px rgba(255, 23, 68, 0.5);
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0;
+}
+
+/* ===============================================
+   CTA RESERVA
+   =============================================== */
+
+.cta-reserva {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(255, 23, 68, 0.1) 100%);
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary-white);
+    text-shadow: 0 0 30px rgba(255, 23, 68, 0.3);
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.3rem;
+    color: var(--primary-red);
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ===============================================
+   OTRAS SALAS
+   =============================================== */
+
+.otras-salas {
+    padding: 5rem 0;
+}
+
+.salas-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.sala-preview-card {
+    background: linear-gradient(135deg, rgba(20, 24, 60, 0.8) 0%, rgba(10, 14, 39, 0.95) 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 23, 68, 0.2);
+    transition: var(--transition);
+    animation: slideInUp 0.8s ease-out both;
+}
+
+.sala-preview-card:hover {
+    transform: translateY(-15px);
+    border-color: var(--primary-red);
+    box-shadow: 0 25px 60px rgba(255, 23, 68, 0.3);
+}
+
+.sala-preview-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sala-preview-image.casa {
+    background-image: linear-gradient(135deg, rgba(139, 92, 246, 0.5) 0%, rgba(255, 23, 68, 0.5) 100%);
+}
+
+.sala-preview-image.tutankamon {
+    background-image: linear-gradient(135deg, rgba(218, 165, 32, 0.5) 0%, rgba(139, 69, 19, 0.5) 100%);
+}
+
+.sala-preview-image.carcel {
+    background-image: linear-gradient(135deg, rgba(128, 128, 128, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.sala-preview-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 23, 68, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.sala-preview-image:hover .sala-preview-overlay {
+    background: rgba(255, 23, 68, 0.8);
+}
+
+.sala-preview-card h3 {
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    color: var(--primary-white);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0;
+}
+
+.sala-preview-card p {
+    padding: 0 1.5rem 1.5rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* ===============================================
+   RESPONSIVE DESIGN
+   =============================================== */
+
+@media (max-width: 1024px) {
+    .sala-title {
+        font-size: 3rem;
+    }
+
+    .descripcion-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .sala-hero {
+        height: 50vh;
+        margin-top: 60px;
+    }
+
+    .sala-title {
+        font-size: 2rem;
+    }
+
+    .sala-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .sala-stats {
+        gap: 1rem;
+    }
+
+    .sala-stats .stat {
+        font-size: 0.8rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .descripcion-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .descripcion-text p {
+        font-size: 0.95rem;
+    }
+
+    .features-grid,
+    .espacios-grid,
+    .requisitos-grid,
+    .testimonios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-content p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+    }
+
+    .breadcrumb {
+        font-size: 0.8rem;
+    }
+}
