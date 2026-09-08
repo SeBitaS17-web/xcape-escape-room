@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Embrujada - XCAPE Escape Room</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/salas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <span class="logo-x">X</span>CAPE
+                </a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">INICIO</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">SALAS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="casa-embrujada.html" class="active">Casa Embrujada</a></li>
+                        <li><a href="maldicion-tutankamon.html">Maldición de Tutankamón</a></li>
+                        <li><a href="carcel.html">La Cárcel</a></li>
+                    </ul>
+                </li>
+                <li><a href="precios.html" class="nav-link">PRECIOS</a></li>
+                <li><a href="empresas.html" class="nav-link">EMPRESAS</a></li>
+                <li><a href="galeria.html" class="nav-link">GALERÍA</a></li>
+                <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SALA -->
+    <section class="sala-hero casa-embrujada-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="breadcrumb">
+                <a href="../index.html">Inicio</a>
+                <span>/</span>
+                <a href="precios.html">Salas</a>
+                <span>/</span>
+                <span>Casa Embrujada</span>
+            </div>
+            <h1 class="sala-title">Casa Embrujada</h1>
+            <p class="sala-subtitle">Adéntrate en una mansión maldita llena de secretos</p>
+            <div class="sala-stats">
+                <div class="stat">
+                    <i class="fas fa-star"></i>
+                    <span>Dificultad: Medio</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-clock"></i>
+                    <span>60 minutos</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <span>2-6 personas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESCRIPCIÓN GENERAL -->
+    <section class="sala-descripcion">
+        <div class="container">
+            <div class="descripcion-grid">
+                <div class="descripcion-text">
+                    <h2>La Historia</h2>
+                    <p>
+                        Los últimos residentes de la mansión Ashworth desaparecieron sin dejar rastro hace más de un siglo. 
+                        Se rumorea que el lugar está embrujado por los espíritus de quienes murieron entre sus paredes.
+                    </p>
+                    <p>
+                        Tu misión es investigar los misterios ocultos en cada rincón de esta casa maldita. Descubre pistas, 
+                        resuelve acertijos antiguos y desbloquea los secretos que mantienen atrapados a los espíritus.
+                    </p>
+                    <p>
+                        ¿Podrás escapar antes de que los espíritus te atrapen también? El tiempo se agota...
+                    </p>
+                </div>
+                <div class="descripcion-image">
+                    <img src="../images/salas/casa-embrujada-hero.jpg" alt="Casa Embrujada">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARACTERÍSTICAS PRINCIPALES -->
+    <section class="sala-features">
+        <div class="container">
+            <h2 class="section-title">Características Principales</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-ghost"></i>
+                    <h3>Atmósfera Envolvente</h3>
+                    <p>Efectos de sonido y iluminación que te sumergirán en un ambiente paranormal</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <h3>Puzles Inteligentes</h3>
+                    <p>10-12 acertijos diseñados para principiantes e intermedios</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-key"></i>
+                    <h3>Mecanismos Ocultos</h3>
+                    <p>Descubre puertas secretas y objetos escondidos por toda la mansión</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-film"></i>
+                    <h3>Efectos Especiales</h3>
+                    <p>Proyecciones, apariciones holográficas y sorpresas aterradoras</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Narrativa Profunda</h3>
+                    <p>Una historia rica con múltiples puntos de vista y finales alternativos</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Experiencia Colaborativa</h3>
+                    <p>Requiere trabajo en equipo y comunicación constante</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SALAS FÍSICAS -->
+    <section class="salas-fisicas">
+        <div class="container">
+            <h2 class="section-title">Espacios de la Experiencia</h2>
+            <div class="espacios-grid">
+                <div class="espacio-card">
+                    <div class="espacio-number">01</div>
+                    <h3>Entrada Principal</h3>
+                    <p>Comienza tu aventura en el vestíbulo de la mansión. Observa cada detalle, no es coincidencia que hayas llegado aquí.</p>
+                </div>
+                <div class="espacio-card">
+                    <div class="espacio-number">02</div>
+                    <h3>Sala de Estar</h3>
+                    <p>Una sala lujosa pero decadente. Los muebles polvorientos guardan secretos que deben ser desvelados.</p>
+                </div>
+                <div class="espacio-card">
+                    <div class="espacio-number">03</div>
+                    <h3>Biblioteca Antigua</h3>
+                    <p>Miles de libros envejecidos. Busca entre sus páginas pistas que te guíen hacia la verdad.</p>
+                </div>
+                <div class="espacio-card">
+                    <div class="espacio-number">04</div>
+                    <h3>Dormitorio Misterioso</h3>
+                    <p>La habitación privada de la familia. Descubre objetos personales que revelan el verdadero terror.</p>
+                </div>
+                <div class="espacio-card">
+                    <div class="espacio-number">05</div>
+                    <h3>Sótano Oscuro</h3>
+                    <p>Las profundidades de la mansión guardan el mayor secreto. ¿Te atreves a descenderlo?</p>
+                </div>
+                <div class="espacio-card">
+                    <div class="espacio-number">06</div>
+                    <h3>Cámara Secreta</h3>
+                    <p>Solo los más observadores encontrarán el lugar donde todo terminará. La verdad te espera.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REQUISITOS Y RESTRICCIONES -->
+    <section class="requisitos">
+        <div class="container">
+            <h2 class="section-title">Información Importante</h2>
+            <div class="requisitos-grid">
+                <div class="requisito-card">
+                    <div class="requisito-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Recomendado Para</h3>
+                    <ul>
+                        <li>Principiantes en escape rooms</li>
+                        <li>Familias con niños mayores de 10 años</li>
+                        <li>Grupos de amigos</li>
+                        <li>Eventos corporativos relajados</li>
+                    </ul>
+                </div>
+                <div class="requisito-card">
+                    <div class="requisito-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Restricciones</h3>
+                    <ul>
+                        <li>Menores de 8 años: No recomendado</li>
+                        <li>Personas con fobias severas a la oscuridad: Considerar alternativa</li>
+                        <li>No se permite correr dentro de la sala</li>
+                        <li>No tocar objetos sin permiso del GM</li>
+                    </ul>
+                </div>
+                <div class="requisito-card">
+                    <div class="requisito-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <h3>Incluye</h3>
+                    <ul>
+                        <li>60 minutos de juego completo</li>
+                        <li>Certificado de escape personalizado</li>
+                        <li>Fotos de grupo en la experiencia</li>
+                        <li>Briefing y debriefing con el Game Master</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="sala-galeria">
+        <div class="container">
+            <h2 class="section-title">Galería de Fotos</h2>
+            <div class="galeria-grid">
+                <div class="galeria-item">
+                    <img src="../images/salas/casa-1.jpg" alt="Interior Casa Embrujada">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="../images/salas/casa-2.jpg" alt="Detalles Casa Embrujada">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="../images/salas/casa-3.jpg" alt="Efecto Especial">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="../images/salas/casa-4.jpg" alt="Detalle Decoración">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonios">
+        <div class="container">
+            <h2 class="section-title">Lo Que Dicen Nuestros Visitantes</h2>
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"¡Increíble experiencia! La atmósfera es aterradora y los puzles están muy bien diseñados. ¡Escapamos con 3 minutos para sobra!"</p>
+                    <h4>- Carlos M.</h4>
+                </div>
+                <div class="testimonio-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Perfecto para nuestro cumpleaños. El Game Master fue muy profesional y los efectos especiales nos sacaron más de un grito."</p>
+                    <h4>- Laura G.</h4>
+                </div>
+                <div class="testimonio-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"La historia es tan intrigante que queríamos jugar de nuevo para descubrir todo lo que nos perdimos la primera vez."</p>
+                    <h4>- Juan D.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA RESERVA -->
+    <section class="cta-reserva">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para la Aventura?</h2>
+                <p>Casa Embrujada te espera. ¿Podrás revelar sus secretos?</p>
+                <div class="cta-buttons">
+                    <a href="precios.html" class="btn btn-primary">Ver Precios</a>
+                    <a href="contacto.html?sala=casa-embrujada" class="btn btn-secondary">Reservar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENLACES A OTRAS SALAS -->
+    <section class="otras-salas">
+        <div class="container">
+            <h2 class="section-title">Explora Nuestras Otras Salas</h2>
+            <div class="salas-preview-grid">
+                <div class="sala-preview-card">
+                    <div class="sala-preview-image tutankamon">
+                        <div class="sala-preview-overlay">
+                            <a href="maldicion-tutankamon.html" class="btn btn-small">Descubrir</a>
+                        </div>
+                    </div>
+                    <h3>Maldición de Tutankamón</h3>
+                    <p>Dificultad: <strong>Difícil</strong></p>
+                </div>
+                <div class="sala-preview-card">
+                    <div class="sala-preview-image carcel">
+                        <div class="sala-preview-overlay">
+                            <a href="carcel.html" class="btn btn-small">Descubrir</a>
+                        </div>
+                    </div>
+                    <h3>La Cárcel</h3>
+                    <p>Dificultad: <strong>Muy Difícil</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>XCAPE</h4>
+                <p>Vive la experiencia del escape room más emocionante de la ciudad.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>SALAS</h4>
+                <ul>
+                    <li><a href="casa-embrujada.html">Casa Embrujada</a></li>
+                    <li><a href="maldicion-tutankamon.html">Maldición de Tutankamón</a></li>
+                    <li><a href="carcel.html">La Cárcel</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>INFORMACIÓN</h4>
+                <ul>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="terminos.html">Términos de Servicio</a></li>
+                    <li><a href="politicas-datos.html">Política de Datos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 XCAPE - Todos los derechos reservados | Desarrollado con <i class="fas fa-heart"></i> por SeBitaS17-web</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/salas.js"></script>
+</body>
+</html>
