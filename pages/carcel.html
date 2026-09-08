@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cárcel - XCAPE Escape Room</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/salas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <span class="logo-x">X</span>CAPE
+                </a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">INICIO</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">SALAS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="casa-embrujada.html">Casa Embrujada</a></li>
+                        <li><a href="maldicion-tutankamon.html">Maldición de Tutankamón</a></li>
+                        <li><a href="carcel.html" class="active">La Cárcel</a></li>
+                    </ul>
+                </li>
+                <li><a href="precios.html" class="nav-link">PRECIOS</a></li>
+                <li><a href="empresas.html" class="nav-link">EMPRESAS</a></li>
+                <li><a href="galeria.html" class="nav-link">GALERÍA</a></li>
+                <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SALA -->
+    <section class="sala-hero carcel-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="breadcrumb">
+                <a href="../index.html">Inicio</a>
+                <span>/</span>
+                <a href="precios.html">Salas</a>
+                <span>/</span>
+                <span>La Cárcel</span>
+            </div>
+            <h1 class="sala-title">La Cárcel</h1>
+            <p class="sala-subtitle">Escapa de la penitenciaría de máxima seguridad más segura del mundo</p>
+            <div class="sala-stats">
+                <div class="stat">
+                    <i class="fas fa-star"></i>
+                    <span>Dificultad: Muy Difícil</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-clock"></i>
+                    <span>60 minutos</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <span>3-6 personas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESCRIPCIÓN GENERAL -->
+    <section class="sala-descripcion">
+        <div class="container">
+            <div class="descripcion-grid">
+                <div class="descripcion-text">
+                    <h2>La Historia</h2>
+                    <p>
+                        Has sido condenado injustamente a cadena perpetua en la Penitenciaría Federal de Blackstone, 
+                        la cárcel de máxima seguridad más infame del país. Nadie ha escapado. Nadie.
+                    </p>
+                    <p>
+                        Pero tú tienes información de un guardia corrupto sobre una oportunidad única. Los guardias cambiarán 
+                        de turno en exactamente 60 minutos, y durante ese breve período, todas las puertas de seguridad tendrán un fallo.
+                    </p>
+                    <p>
+                        Debes usar tu ingenio, tu valentía y el trabajo en equipo para navegar por las celdas, burlarte de los guardias, 
+                        desmantelar los sistemas de vigilancia y alcanzar la libertad. Este es tu único disparo. No hay segundas oportunidades.
+                        ¿Podrás escapar del infierno de Blackstone?
+                    </p>
+                </div>
+                <div class="descripcion-image">
+                    <img src="../images/salas/carcel-hero.jpg" alt="La Cárcel">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARACTERÍSTICAS PRINCIPALES -->
+    <section class="sala-features">
+        <div class="container">
+            <h2 class="section-title">Características Principales</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-bars"></i>
+                    <h3>Realismo Extremo</h3>
+                    <p>Autenticidad de cárcel real con seguridad, protocolos y atmósfera desgarradora</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Puzles Brutales</h3>
+                    <p>20-25 acertijos de nivel experto que requieren pensamiento crítico extremo</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Sistema de Vigilancia</h3>
+                    <p>Interactúa con cámaras de seguridad reales y evita ser detectado por guardias</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Cerraduras Complejas</h3>
+                    <p>Múltiples sistemas de seguridad que deben ser deshabilitados secuencialmente</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-running"></i>
+                    <h3>Elemento de Presión</h3>
+                    <p>Timer visible contando hacia atrás - cada segundo cuenta más que nunca</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-infinity"></i>
+                    <h3>Finales Múltiples</h3>
+                    <p>Tu éxito depende de decisiones cruciales - ¿Escaparás o serás capturado?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SALAS FÍSICAS -->
+    <section class="salas-fisicas">
+        <div class="container">
+            <h2 class="section-title">Áreas de la Penitenciaría</h2>
+            <div class="espacios-grid">
+                <div class="espacio-card">
+                    <div class="espacio-number">01</div>
+                    <h3>Celda de Confinamiento</h3>
+                    <p>Tu celda es tu primer obstáculo. Busca en cada grieta y rincón. La libertad comienza aquí.</p>
+                </div>
+                <div class="espacio-card">
+                    <div class="espacio-number">02</div>
+                    <h3>Patio de Ejercicios</h3>
+                    <p>Bajo vigilancia constante. Aquí encontrarás aliados y enemigos. Elige con cuidado a quién confiar.</p>
+                </div>
+                <div class="espacio-card">
+                    <div class="espacio-number">03</div>
+                    <h3>Cocina Penitenciaria</h3>
+                    <p>Herramientas, químicos y secretos. Pero el cocinero no toma amablemente a los curiosos.</p>
+                </div>
+                <div class="espacio-card">
+                    <div class="espacio-number">04</div>
+                    <h3>Centro de Control</h3>
+                    <p>El corazón de la seguridad. Los sistemas aquí controlan toda la cárcel. Acceso = libertad.</p>
+                </div>
+                <div class="espacio-card">
+                    <div class="espacio-number">05</div>
+                    <h3>Ala de Administrativos</h3>
+                    <p>Registros, archivos y códigos. La información aquí podría ser la clave para tu escape.</p>
+                </div>
+                <div class="espacio-card">
+                    <div class="espacio-number">06</div>
+                    <h3>Túneles de Escape</h3>
+                    <p>Solo accesible si has resuelto todo correctamente. ¿Tendrás el coraje de correr hacia la libertad?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REQUISITOS Y RESTRICCIONES -->
+    <section class="requisitos">
+        <div class="container">
+            <h2 class="section-title">Información Importante</h2>
+            <div class="requisitos-grid">
+                <div class="requisito-card">
+                    <div class="requisito-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Recomendado Para</h3>
+                    <ul>
+                        <li>Jugadores expertos de escape rooms</li>
+                        <li>Equipos que buscan un desafío extremo</li>
+                        <li>Grupos corporativos de élite</li>
+                        <li>Personas con excelente trabajo en equipo</li>
+                    </ul>
+                </div>
+                <div class="requisito-card">
+                    <div class="requisito-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Restricciones</h3>
+                    <ul>
+                        <li>Mayores de 14 años (recomendado 16+)</li>
+                        <li>Requiere excelente condición física</li>
+                        <li>No apto para personas claustrofóbicas</li>
+                        <li>Atmósfera intensa y psicológicamente desafiante</li>
+                    </ul>
+                </div>
+                <div class="requisito-card">
+                    <div class="requisito-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <h3>Incluye</h3>
+                    <ul>
+                        <li>60 minutos de experiencia extrema</li>
+                        <li>Certificado de Escapista Legendario</li>
+                        <li>Sesión de debriefing de estrategia</li>
+                        <li>Descuento especial para próxima visita</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="sala-galeria">
+        <div class="container">
+            <h2 class="section-title">Galería de Fotos</h2>
+            <div class="galeria-grid">
+                <div class="galeria-item">
+                    <img src="../images/salas/carcel-1.jpg" alt="Interior Cárcel">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="../images/salas/carcel-2.jpg" alt="Celda de Máxima Seguridad">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="../images/salas/carcel-3.jpg" alt="Centro de Control">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="galeria-item">
+                    <img src="../images/salas/carcel-4.jpg" alt="Túneles de Escape">
+                    <div class="galeria-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonios">
+        <div class="container">
+            <h2 class="section-title">Historias de Escape</h2>
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"¡INSANE! Esto no es un escape room normal. Es una verdadera batalla de ingenio contra el sistema. Escapamos con 2 minutos de sobra pero fue brutal."</p>
+                    <h4>- Diego P.</h4>
+                </div>
+                <div class="testimonio-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"El desafío más difícil que he enfrentado en mi vida. Requiere real pensamiento estratégico y coordinación perfecta del equipo. Absolutamente genial."</p>
+                    <h4>- Sofía T.</h4>
+                </div>
+                <div class="testimonio-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"No escapamos la primera vez pero volvimos a intentar. Esta experiencia nos enseñó el verdadero significado del trabajo en equipo."</p>
+                    <h4>- Andrés M.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title">Estadísticas de Escape</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">40%</div>
+                    <p>Tasa de Escape</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4.9/5</div>
+                    <p>Rating Promedio</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1,247</div>
+                    <p>Intentos Totales</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">17 min</div>
+                    <p>Escape Más Rápido</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA RESERVA -->
+    <section class="cta-reserva">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Tienes lo Que Se Necesita Para Escapar?</h2>
+                <p>La Penitenciaría de Blackstone nunca ha dejado ir a alguien. ¿Serás el primero?</p>
+                <div class="cta-buttons">
+                    <a href="precios.html" class="btn btn-primary">Ver Precios</a>
+                    <a href="contacto.html?sala=la-carcel" class="btn btn-secondary">Reservar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENLACES A OTRAS SALAS -->
+    <section class="otras-salas">
+        <div class="container">
+            <h2 class="section-title">Explora Nuestras Otras Salas</h2>
+            <div class="salas-preview-grid">
+                <div class="sala-preview-card">
+                    <div class="sala-preview-image casa">
+                        <div class="sala-preview-overlay">
+                            <a href="casa-embrujada.html" class="btn btn-small">Descubrir</a>
+                        </div>
+                    </div>
+                    <h3>Casa Embrujada</h3>
+                    <p>Dificultad: <strong>Medio</strong></p>
+                </div>
+                <div class="sala-preview-card">
+                    <div class="sala-preview-image tutankamon">
+                        <div class="sala-preview-overlay">
+                            <a href="maldicion-tutankamon.html" class="btn btn-small">Descubrir</a>
+                        </div>
+                    </div>
+                    <h3>Maldición de Tutankamón</h3>
+                    <p>Dificultad: <strong>Difícil</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>XCAPE</h4>
+                <p>Vive la experiencia del escape room más emocionante de la ciudad.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>SALAS</h4>
+                <ul>
+                    <li><a href="casa-embrujada.html">Casa Embrujada</a></li>
+                    <li><a href="maldicion-tutankamon.html">Maldición de Tutankamón</a></li>
+                    <li><a href="carcel.html">La Cárcel</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>INFORMACIÓN</h4>
+                <ul>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="terminos.html">Términos de Servicio</a></li>
+                    <li><a href="politicas-datos.html">Política de Datos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 XCAPE - Todos los derechos reservados | Desarrollado con <i class="fas fa-heart"></i> por SeBitaS17-web</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/salas.js"></script>
+</body>
+</html>
