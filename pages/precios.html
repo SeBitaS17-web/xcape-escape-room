@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRECIOS - XCAPE Escape Room | Tarifas y Promociones</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <span class="logo-x">X</span>CAPE
+                </a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">INICIO</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">SALAS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="casa-embrujada.html">Casa Embrujada</a></li>
+                        <li><a href="maldicion-tutankamon.html">Maldición de Tutankamón</a></li>
+                        <li><a href="carcel.html">La Cárcel</a></li>
+                    </ul>
+                </li>
+                <li><a href="precios.html" class="nav-link active">PRECIOS</a></li>
+                <li><a href="empresas.html" class="nav-link">EMPRESAS</a></li>
+                <li><a href="galeria.html" class="nav-link">GALERÍA</a></li>
+                <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO PRECIOS -->
+    <section class="precios-hero">
+        <div class="hero-background">
+            <div class="stars"></div>
+            <div class="fog"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                PRECIOS
+            </h1>
+            <p class="hero-subtitle">Elige tu aventura, tu presupuesto</p>
+        </div>
+    </section>
+
+    <!-- OPCIONES DE PRECIOS -->
+    <section class="precios-container">
+        <div class="section-title">
+            <h2>Nuestras Tarifas</h2>
+            <p>Acceso a experiencias únicas y emocionantes</p>
+        </div>
+
+        <!-- TOGGLE: Por Persona vs Por Grupo -->
+        <div class="pricing-toggle">
+            <button class="toggle-btn active" data-toggle="persona">
+                <i class="fas fa-user"></i> Por Persona
+            </button>
+            <button class="toggle-btn" data-toggle="grupo">
+                <i class="fas fa-users"></i> Por Grupo
+            </button>
+        </div>
+
+        <!-- PRECIOS POR PERSONA -->
+        <div class="pricing-grid" id="preciosPersona">
+            <!-- Sala 1: Casa Embrujada -->
+            <div class="precio-card casa-embrujada-card">
+                <div class="precio-header">
+                    <i class="fas fa-ghost"></i>
+                    <h3>Casa Embrujada</h3>
+                    <p class="dificultad">Dificultad: Medio</p>
+                </div>
+                <div class="precio-body">
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">15</span>
+                        <span class="period">/por persona</span>
+                    </div>
+                    <p class="descripcion">Experiencia de 60 minutos en una mansión maldita</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> 60 minutos de juego</li>
+                        <li><i class="fas fa-check-circle"></i> 2-6 jugadores</li>
+                        <li><i class="fas fa-check-circle"></i> Efectos especiales</li>
+                        <li><i class="fas fa-check-circle"></i> Certificado de escape</li>
+                        <li><i class="fas fa-check-circle"></i> Foto de grupo</li>
+                    </ul>
+                </div>
+                <div class="precio-footer">
+                    <a href="contacto.html" class="btn btn-sala">Reservar Ahora</a>
+                </div>
+            </div>
+
+            <!-- Sala 2: Maldición de Tutankamón -->
+            <div class="precio-card tutankamon-card featured">
+                <div class="precio-badge">MÁS POPULAR</div>
+                <div class="precio-header">
+                    <i class="fas fa-crown"></i>
+                    <h3>Maldición de Tutankamón</h3>
+                    <p class="dificultad">Dificultad: Difícil</p>
+                </div>
+                <div class="precio-body">
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">20</span>
+                        <span class="period">/por persona</span>
+                    </div>
+                    <p class="descripcion">Aventura épica en una tumba milenaria</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> 60 minutos de juego</li>
+                        <li><i class="fas fa-check-circle"></i> 2-6 jugadores</li>
+                        <li><i class="fas fa-check-circle"></i> Puzles avanzados</li>
+                        <li><i class="fas fa-check-circle"></i> Certificado de escape</li>
+                        <li><i class="fas fa-check-circle"></i> Video promocional</li>
+                    </ul>
+                </div>
+                <div class="precio-footer">
+                    <a href="contacto.html" class="btn btn-sala">Reservar Ahora</a>
+                </div>
+            </div>
+
+            <!-- Sala 3: La Cárcel -->
+            <div class="precio-card carcel-card">
+                <div class="precio-header">
+                    <i class="fas fa-lock"></i>
+                    <h3>La Cárcel</h3>
+                    <p class="dificultad">Dificultad: Muy Difícil</p>
+                </div>
+                <div class="precio-body">
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">25</span>
+                        <span class="period">/por persona</span>
+                    </div>
+                    <p class="descripcion">Máximo desafío en una celda de seguridad</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> 60 minutos de juego</li>
+                        <li><i class="fas fa-check-circle"></i> 2-6 jugadores</li>
+                        <li><i class="fas fa-check-circle"></i> Desafíos extremos</li>
+                        <li><i class="fas fa-check-circle"></i> Certificado premium</li>
+                        <li><i class="fas fa-check-circle"></i> Mención en ranking</li>
+                    </ul>
+                </div>
+                <div class="precio-footer">
+                    <a href="contacto.html" class="btn btn-sala">Reservar Ahora</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRECIOS POR GRUPO -->
+        <div class="pricing-grid" id="preciosGrupo" style="display: none;">
+            <!-- Sala 1: Casa Embrujada -->
+            <div class="precio-card casa-embrujada-card">
+                <div class="precio-header">
+                    <i class="fas fa-ghost"></i>
+                    <h3>Casa Embrujada</h3>
+                    <p class="dificultad">Dificultad: Medio</p>
+                </div>
+                <div class="precio-body">
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">60</span>
+                        <span class="period">/grupo (2-6 personas)</span>
+                    </div>
+                    <p class="descripcion">Experiencia completa para todo tu grupo</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> 60 minutos de juego</li>
+                        <li><i class="fas fa-check-circle"></i> Hasta 6 jugadores</li>
+                        <li><i class="fas fa-check-circle"></i> Efectos especiales</li>
+                        <li><i class="fas fa-check-circle"></i> Certificados para todos</li>
+                        <li><i class="fas fa-check-circle"></i> Fotos de grupo</li>
+                    </ul>
+                </div>
+                <div class="precio-footer">
+                    <a href="contacto.html" class="btn btn-sala">Reservar Ahora</a>
+                </div>
+            </div>
+
+            <!-- Sala 2: Maldición de Tutankamón -->
+            <div class="precio-card tutankamon-card featured">
+                <div class="precio-badge">MEJOR VALOR</div>
+                <div class="precio-header">
+                    <i class="fas fa-crown"></i>
+                    <h3>Maldición de Tutankamón</h3>
+                    <p class="dificultad">Dificultad: Difícil</p>
+                </div>
+                <div class="precio-body">
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">100</span>
+                        <span class="period">/grupo (2-6 personas)</span>
+                    </div>
+                    <p class="descripcion">Aventura épica con descuento grupal</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> 60 minutos de juego</li>
+                        <li><i class="fas fa-check-circle"></i> Hasta 6 jugadores</li>
+                        <li><i class="fas fa-check-circle"></i> Puzles avanzados</li>
+                        <li><i class="fas fa-check-circle"></i> Certificados premium</li>
+                        <li><i class="fas fa-check-circle"></i> Videos promocionales</li>
+                    </ul>
+                </div>
+                <div class="precio-footer">
+                    <a href="contacto.html" class="btn btn-sala">Reservar Ahora</a>
+                </div>
+            </div>
+
+            <!-- Sala 3: La Cárcel -->
+            <div class="precio-card carcel-card">
+                <div class="precio-header">
+                    <i class="fas fa-lock"></i>
+                    <h3>La Cárcel</h3>
+                    <p class="dificultad">Dificultad: Muy Difícil</p>
+                </div>
+                <div class="precio-body">
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">130</span>
+                        <span class="period">/grupo (2-6 personas)</span>
+                    </div>
+                    <p class="descripcion">Desafío extremo para equipos audaces</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> 60 minutos de juego</li>
+                        <li><i class="fas fa-check-circle"></i> Hasta 6 jugadores</li>
+                        <li><i class="fas fa-check-circle"></i> Desafíos extremos</li>
+                        <li><i class="fas fa-check-circle"></i> Certificados premium</li>
+                        <li><i class="fas fa-check-circle"></i> Ranking destacado</li>
+                    </ul>
+                </div>
+                <div class="precio-footer">
+                    <a href="contacto.html" class="btn btn-sala">Reservar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMOCIONES ESPECIALES -->
+    <section class="promociones">
+        <div class="section-title">
+            <h2>Ofertas Especiales</h2>
+            <p>Aprovecha nuestras promociones</p>
+        </div>
+
+        <div class="promociones-grid">
+            <div class="promo-card">
+                <i class="fas fa-gift"></i>
+                <h3>Descuento Grupal</h3>
+                <p>15% de descuento para grupos de 8 o más personas</p>
+                <span class="promo-badge">Hasta 15%</span>
+            </div>
+
+            <div class="promo-card">
+                <i class="fas fa-calendar-days"></i>
+                <h3>Cumpleaños</h3>
+                <p>El cumpleañero entra GRATIS en grupos de 6 personas</p>
+                <span class="promo-badge">GRATIS</span>
+            </div>
+
+            <div class="promo-card">
+                <i class="fas fa-star"></i>
+                <h3>Pack Dual</h3>
+                <p>20% de descuento si reservas 2 salas en el mismo día</p>
+                <span class="promo-badge">Hasta 20%</span>
+            </div>
+
+            <div class="promo-card">
+                <i class="fas fa-users-class"></i>
+                <h3>Corporativo</h3>
+                <p>Descuentos especiales para eventos empresariales y team building</p>
+                <span class="promo-badge">Personizado</span>
+            </div>
+
+            <div class="promo-card">
+                <i class="fas fa-clock"></i>
+                <h3>Happy Hour</h3>
+                <p>10% de descuento en turnos entre 14:00 y 16:00</p>
+                <span class="promo-badge">Hasta 10%</span>
+            </div>
+
+            <div class="promo-card">
+                <i class="fas fa-ticket"></i>
+                <h3>Tarjeta Fidelización</h3>
+                <p>Acumula puntos y canjéalos por descuentos</p>
+                <span class="promo-badge">Beneficios</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABLA COMPARATIVA -->
+    <section class="comparativa">
+        <div class="section-title">
+            <h2>Comparativa de Salas</h2>
+            <p>Elige la que mejor se adapte a ti</p>
+        </div>
+
+        <div class="tabla-comparativa-scroll">
+            <table class="tabla-comparativa">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th><i class="fas fa-ghost"></i> Casa Embrujada</th>
+                        <th><i class="fas fa-crown"></i> Tutankamón</th>
+                        <th><i class="fas fa-lock"></i> La Cárcel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Dificultad</strong></td>
+                        <td>Medio</td>
+                        <td>Difícil</td>
+                        <td>Muy Difícil</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Duración</strong></td>
+                        <td>60 minutos</td>
+                        <td>60 minutos</td>
+                        <td>60 minutos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Jugadores</strong></td>
+                        <td>2-6 personas</td>
+                        <td>2-6 personas</td>
+                        <td>2-6 personas</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Puzles</strong></td>
+                        <td>10-12</td>
+                        <td>15-18</td>
+                        <td>20-25</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Efectos Especiales</strong></td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Recomendado para</strong></td>
+                        <td>Principiantes</td>
+                        <td>Intermedios</td>
+                        <td>Expertos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tasa Éxito</strong></td>
+                        <td>~85%</td>
+                        <td>~70%</td>
+                        <td>~40%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Precio/Persona</strong></td>
+                        <td>$15</td>
+                        <td>$20</td>
+                        <td>$25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="faq">
+        <div class="section-title">
+            <h2>Preguntas Frecuentes</h2>
+            <p>Respuestas a las dudas más comunes</p>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Cuál es el horario de funcionamiento?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Abrimos de lunes a domingo de 10:00 AM a 10:00 PM. Los horarios de turnos disponibles son cada hora.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Puedo cambiar de sala después de comprar?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Sí, puedes cambiar de sala sin costo adicional si lo haces con 24 horas de anticipación. Después de ese tiempo, se cobra una diferencia de tarifa.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Qué incluye el precio?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>El precio incluye: 60 minutos de juego, acceso completo a la sala, certificado de escape, y fotos de grupo. Algunas salas incluyen videos promocionales.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Hay descuentos para niños?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Los menores de 12 años reciben 20% de descuento. Menores de 8 años deben estar acompañados por un adulto en todo momento.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Se realizan reembolsos?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Reembolso completo si cancelas con 48 horas de anticipación. Cancelaciones posteriores se reembolsan al 50%.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>¿Cómo pago mi reserva?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Aceptamos tarjetas de crédito/débito, transferencias bancarias y efectivo. El pago se puede hacer online al reservar o en el local.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>¿Listo para Comenzar tu Aventura?</h2>
+            <p>Elige tu sala y crea recuerdos inolvidables</p>
+            <a href="contacto.html" class="btn btn-primary btn-large">
+                <i class="fas fa-calendar-alt"></i> Reserva Ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>XCAPE</h4>
+                <p>Vive la experiencia del escape room más emocionante de la ciudad.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>SALAS</h4>
+                <ul>
+                    <li><a href="casa-embrujada.html">Casa Embrujada</a></li>
+                    <li><a href="maldicion-tutankamon.html">Maldición de Tutankamón</a></li>
+                    <li><a href="carcel.html">La Cárcel</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>INFORMACIÓN</h4>
+                <ul>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="terminos.html">Términos de Servicio</a></li>
+                    <li><a href="politicas-datos.html">Política de Datos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 XCAPE - Todos los derechos reservados | Desarrollado con <i class="fas fa-heart"></i> por SeBitaS17-web</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/precios.js"></script>
+</body>
+</html>
