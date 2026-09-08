@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas - XCAPE Escape Room</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/empresas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <span class="logo-x">X</span>CAPE
+                </a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">INICIO</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">SALAS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="casa-embrujada.html">Casa Embrujada</a></li>
+                        <li><a href="maldicion-tutankamon.html">Maldición de Tutankamón</a></li>
+                        <li><a href="carcel.html">La Cárcel</a></li>
+                    </ul>
+                </li>
+                <li><a href="precios.html" class="nav-link">PRECIOS</a></li>
+                <li><a href="empresas.html" class="nav-link active">EMPRESAS</a></li>
+                <li><a href="galeria.html" class="nav-link">GALERÍA</a></li>
+                <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO EMPRESAS -->
+    <section class="empresas-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Experiencias Corporativas</h1>
+            <p class="hero-subtitle">Fortalece tu equipo mientras escapan juntos del caos</p>
+            <div class="hero-cta">
+                <a href="#planes" class="btn btn-primary">Ver Planes Empresariales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="beneficios">
+        <div class="container">
+            <h2 class="section-title">¿Por Qué Elegir XCAPE para tu Empresa?</h2>
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Trabajo en Equipo</h3>
+                    <p>Fortalece la comunicación y colaboración entre departamentos</p>
+                </div>
+                <div class="beneficio-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Resolución de Problemas</h3>
+                    <p>Desarrolla habilidades de pensamiento crítico bajo presión</p>
+                </div>
+                <div class="beneficio-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Liderazgo</h3>
+                    <p>Identifica líderes naturales y estilos de toma de decisiones</p>
+                </div>
+                <div class="beneficio-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Energía y Motivación</h3>
+                    <p>Crea una experiencia memorable que energiza el equipo</p>
+                </div>
+                <div class="beneficio-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Innovación</h3>
+                    <p>Inspira pensamiento creativo y soluciones fuera de la caja</p>
+                </div>
+                <div class="beneficio-card">
+                    <i class="fas fa-medal"></i>
+                    <h3>Competencia Sana</h3>
+                    <p>Fomenta la competencia amistosa entre equipos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PLANES EMPRESARIALES -->
+    <section class="planes-empresariales" id="planes">
+        <div class="container">
+            <h2 class="section-title">Planes Personalizados para tu Empresa</h2>
+            <p class="section-subtitle">Adaptamos nuestros servicios a las necesidades de tu equipo</p>
+            
+            <div class="planes-grid">
+                <!-- PLAN PEQUEÑO -->
+                <div class="plan-card">
+                    <div class="plan-badge">Popular</div>
+                    <div class="plan-header">
+                        <h3>Pequeño Equipo</h3>
+                        <p>Hasta 10 personas</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="amount">450</span>
+                        <span class="period">/grupo</span>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Acceso a 1 sala</li>
+                            <li><i class="fas fa-check"></i> 60 minutos completos</li>
+                            <li><i class="fas fa-check"></i> Game Master dedicado</li>
+                            <li><i class="fas fa-check"></i> Sesión de debriefing</li>
+                            <li><i class="fas fa-check"></i> Fotos del evento</li>
+                            <li><i class="fas fa-times"></i> Servicio de catering</li>
+                            <li><i class="fas fa-times"></i> Sala privada de reuniones</li>
+                        </ul>
+                    </div>
+                    <a href="contacto.html?plan=pequeno" class="btn btn-primary btn-full">Reservar Plan</a>
+                </div>
+
+                <!-- PLAN MEDIANO -->
+                <div class="plan-card featured">
+                    <div class="plan-badge featured">Recomendado</div>
+                    <div class="plan-header">
+                        <h3>Equipo Mediano</h3>
+                        <p>11-25 personas</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="amount">950</span>
+                        <span class="period">/grupo</span>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Acceso a 2 salas simultáneas</li>
+                            <li><i class="fas fa-check"></i> 60 minutos completos</li>
+                            <li><i class="fas fa-check"></i> 2 Game Masters dedicados</li>
+                            <li><i class="fas fa-check"></i> Sesión de debriefing grupal</li>
+                            <li><i class="fas fa-check"></i> Fotos profesionales</li>
+                            <li><i class="fas fa-check"></i> Servicio de catering básico</li>
+                            <li><i class="fas fa-times"></i> Sala privada de reuniones</li>
+                        </ul>
+                    </div>
+                    <a href="contacto.html?plan=mediano" class="btn btn-primary btn-full">Reservar Plan</a>
+                </div>
+
+                <!-- PLAN GRANDE -->
+                <div class="plan-card">
+                    <div class="plan-badge">Completo</div>
+                    <div class="plan-header">
+                        <h3>Equipo Grande</h3>
+                        <p>26+ personas</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="amount">Personalizado</span>
+                        <span class="period">/consultar</span>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Acceso a todas las salas</li>
+                            <li><i class="fas fa-check"></i> 60-90 minutos personalizables</li>
+                            <li><i class="fas fa-check"></i> Equipo de Game Masters completo</li>
+                            <li><i class="fas fa-check"></i> Análisis detallado de dinámicas</li>
+                            <li><i class="fas fa-check"></i> Producción de video profesional</li>
+                            <li><i class="fas fa-check"></i> Catering premium</li>
+                            <li><i class="fas fa-check"></i> Sala privada de reuniones</li>
+                        </ul>
+                    </div>
+                    <a href="contacto.html?plan=grande" class="btn btn-secondary btn-full">Consultar Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADICIONALES -->
+    <section class="adicionales">
+        <div class="container">
+            <h2 class="section-title">Servicios Adicionales</h2>
+            <div class="adicionales-grid">
+                <div class="adicional-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Catering Personalizado</h3>
+                    <p>Desde snacks hasta comida completa. Menús personalizables según preferencias.</p>
+                    <span class="price">$5-15 por persona</span>
+                </div>
+                <div class="adicional-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Producción de Video</h3>
+                    <p>Video profesional del evento, momentos clave y testimonios del equipo.</p>
+                    <span class="price">$300-600</span>
+                </div>
+                <div class="adicional-card">
+                    <i class="fas fa-camera"></i>
+                    <h3>Fotógrafo Profesional</h3>
+                    <p>Cobertura fotográfica completa con edición y álbum digital.</p>
+                    <span class="price">$250-450</span>
+                </div>
+                <div class="adicional-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Team Building Extremo</h3>
+                    <p>Sala La Cárcel + actividades adicionales de team building.</p>
+                    <span class="price">$800-1200</span>
+                </div>
+                <div class="adicional-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Análisis de Dinámicas</h3>
+                    <p>Reporte detallado sobre roles, liderazgo y áreas de mejora del equipo.</p>
+                    <span class="price">$200-400</span>
+                </div>
+                <div class="adicional-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Trofeos y Certificados</h3>
+                    <p>Trofeos personalizados y certificados de participación para el equipo.</p>
+                    <span class="price">$50-150</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CASOS DE USO -->
+    <section class="casos-uso">
+        <div class="container">
+            <h2 class="section-title">¿Para Qué Tipo de Eventos es Perfecto?</h2>
+            <div class="casos-grid">
+                <div class="caso-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Integración de Nuevos Empleados</h3>
+                    <p>Una forma emocionante y memorable de que los nuevos miembros del equipo se integren y conozcan a sus colegas.</p>
+                </div>
+                <div class="caso-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Retiro Corporativo</h3>
+                    <p>Actividad central para retiros que combina diversión, aprendizaje y construcción de relaciones.</p>
+                </div>
+                <div class="caso-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Cierre de Proyecto</h3>
+                    <p>Celebra el éxito del proyecto mientras refuerzas la cohesión del equipo que lo logró.</p>
+                </div>
+                <div class="caso-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Desarrollo de Liderazgo</h3>
+                    <p>Identifica y desarrolla habilidades de liderazgo en ambientes controlados pero desafiantes.</p>
+                </div>
+                <div class="caso-card">
+                    <i class="fas fa-flag"></i>
+                    <h3>Incentivo para Ventas</h3>
+                    <p>Experiencia premium como recompensa para equipos de ventas que alcanzan metas.</p>
+                </div>
+                <div class="caso-card">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Celebración de Aniversario</h3>
+                    <p>Celebra hitos corporativos con una experiencia única que los empleados nunca olvidarán.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS CORPORATIVOS -->
+    <section class="testimonios-corp">
+        <div class="container">
+            <h2 class="section-title">Qué Dicen Nuestros Clientes Corporativos</h2>
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <div class="company-logo">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h4>TechCorp Solutions</h4>
+                    <p class="role">Gerente de RRHH</p>
+                    <p class="testimonial">"Excelente inversión para team building. El equipo regresó energizado y con mejor comunicación. ¡Ya reservamos para el próximo trimestre!"</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonio-card">
+                    <div class="company-logo">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h4>Marketing Digital Plus</h4>
+                    <p class="role">Director Ejecutivo</p>
+                    <p class="testimonial">"Perfectamente organizado y profesional. Los Game Masters fueron excelentes facilitadores. Recomendado 100% para eventos corporativos."</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonio-card">
+                    <div class="company-logo">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4>Ingeniería & Consultoría</h4>
+                    <p class="role">Coordinador de Eventos</p>
+                    <p class="testimonial">"Increíble flexibilidad para customizar. Los adicionales (catering, video) fueron de primera categoría. El equipo no para de hablar del evento."</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="proceso-corporativo">
+        <div class="container">
+            <h2 class="section-title">Nuestro Proceso</h2>
+            <div class="proceso-timeline">
+                <div class="proceso-paso">
+                    <div class="paso-numero">1</div>
+                    <h3>Consulta Inicial</h3>
+                    <p>Nos reunimos para entender tus objetivos, tamaño del equipo y preferencias.</p>
+                </div>
+                <div class="proceso-paso">
+                    <div class="paso-numero">2</div>
+                    <h3>Propuesta Personalizada</h3>
+                    <p>Creamos un plan tailored con salas, servicios adicionales y precio específico.</p>
+                </div>
+                <div class="proceso-paso">
+                    <div class="paso-numero">3</div>
+                    <h3>Coordinación Detallada</h3>
+                    <p>Planificamos cada detalle: horarios, catering, fotografía, debriefing.</p>
+                </div>
+                <div class="proceso-paso">
+                    <div class="paso-numero">4</div>
+                    <h3>Experiencia Ejecutada</h3>
+                    <p>Tu equipo vive una experiencia memorable con profesionales experimentados.</p>
+                </div>
+                <div class="proceso-paso">
+                    <div class="paso-numero">5</div>
+                    <h3>Seguimiento Post-Evento</h3>
+                    <p>Entregamos reportes, videos y certificados. Recopilamos feedback para mejorar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA CONTACTO -->
+    <section class="cta-contacto">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para una Experiencia Corporativa Única?</h2>
+                <p>Contacta con nuestro equipo especializado en eventos empresariales</p>
+                <div class="cta-buttons">
+                    <a href="contacto.html" class="btn btn-primary">Solicitar Cotización</a>
+                    <a href="tel:+1234567890" class="btn btn-secondary">Llamar Ahora</a>
+                </div>
+                <p class="contact-info">
+                    <i class="fas fa-envelope"></i> eventos@xcape.com
+                    <br>
+                    <i class="fas fa-phone"></i> +1 (555) 123-4567
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>XCAPE</h4>
+                <p>Vive la experiencia del escape room más emocionante de la ciudad.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>SALAS</h4>
+                <ul>
+                    <li><a href="casa-embrujada.html">Casa Embrujada</a></li>
+                    <li><a href="maldicion-tutankamon.html">Maldición de Tutankamón</a></li>
+                    <li><a href="carcel.html">La Cárcel</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>INFORMACIÓN</h4>
+                <ul>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="terminos.html">Términos de Servicio</a></li>
+                    <li><a href="politicas-datos.html">Política de Datos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 XCAPE - Todos los derechos reservados | Desarrollado con <i class="fas fa-heart"></i> por SeBitaS17-web</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/empresas.js"></script>
+</body>
+</html>
